@@ -31,7 +31,7 @@ body {
     width: 300px;
     background: royalblue;
     box-sizing: border-box;
-    flex: none;
+    flex-shrink: 0;
   }
 
   a {
@@ -45,18 +45,17 @@ body {
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 4px;
     padding: 16px;
+    width: 300px;
   } 
 
   .cards {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     padding: 48px;
-    gap: 16px;
+    gap: 32px;
   }
 
   .main {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex: 1;
   }
